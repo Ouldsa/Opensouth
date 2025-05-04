@@ -1,36 +1,26 @@
-A site that scrapes and republishes information on Canada's House of Commons.
+# OpenSouth: Transparency for Guelmim Governance
 
-License
-=======
+A site that tracks and publishes information about elected officials and governance in Guelmim, Morocco. This project aims to increase transparency and citizen engagement with local government.
 
-Code is released under the AGPLv3 (see below). However, any site you create
-using this code cannot use the openparliament.ca name or logo, except as
-acknowledgement.
+## About
 
-Copyright (C) Michael Mulley (michaelmulley.com)
+OpenSouth is an independent, non-governmental initiative to make information about Guelmim's elected officials and governance more accessible to citizens. 
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
+## Data and Sources
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+This project will collect information from:
+- Official city council meetings
+- Regional council decisions
+- Public records about elected officials
+- Voting records and attendance data
 
-Usage
-============
+## Goals
 
-This is the source code for a specific site and isn't adapted for reuse or
-other purposes. But if it's useful to you, that's great!
+- Increase transparency in local governance
+- Provide citizens with easy access to information about their representatives
+- Enable better monitoring of promises versus achievements
+- Support informed voting and civic participation
 
-The application runs on a recent version of Python (3.12 as of this writing).
-Your best bet to get an environment running is probably Docker. A sample
-docker-compose.yml is provided in the config-examples directory; copy it into the
-same directory as this file and run `docker compose up`.
+## Status
 
-The app uses the Django framework, which can work with a variety of databases
-(including sqlite if you don't want to run a database server), but it's only been
-tested with PostgreSQL. You can download a dump of all our Parliamentary data to
-load into Postgres from <https://openparliament.ca/data-download/>.
+This project is in early development. Contributors and supporters welcome!
