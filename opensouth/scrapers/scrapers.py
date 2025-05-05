@@ -173,13 +173,18 @@ class CommuneScraper(BaseScraper):
     """Scrape commune website (roster, minutes, budgets)."""
 
     BASE = "https://communeguelmim.ma"
-    ROSTER_SLUG  = "أعضاء-المجلس"
-    MINUTES_SLUG = "قرارات-المجلس"
-    BUDGETS_SLUG = "ميزانية-المواطن"
+    ROSTER_SLUG  = "تشكيلة-المجلس"
+    MINUTES_SLUG = "المجلس-الجماعي/ملخص-مقررات-الدورات"
+    BUDGETS_SLUG = "الميزانية-المفتوحة/ميزانية-المواطن"
 
     def _url(self, slug: str) -> str:
         return f"{self.BASE}/ar/{slug}"
     
+    def run(self):
+        self._scrape_roster()
+        self._scrape_minutes()
+        self._scrape_budgets()
+
     # ------------------------------------------------------------------
     def _scrape_roster(self):
         url = self._url(self.ROSTER_SLUG)  
